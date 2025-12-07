@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Főoldal</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Nintendo, PlayStation, Xbox webshop, és profeszionális konzol szervizelés.">
+    <link rel="stylesheet" href="../css/mainstyle.css">
+    <link rel="icon" href="../Images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#home">yourboytomi</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="navbar-menu" id="navbarMenu">
+                <ul class="navbar-list">
+                    <li><a href="../Main/mainpage.html" class="navbar-link">Főoldal</a></li>
+                    <li><a href="../Webshop/webshop.html" class="navbar-link">Webshop</a></li>
+                    <li><a href="../Repairs/repairs.html" class="navbar-link">Konzol Szervíz</a></li>
+                    <li><a href="../Contact/contact.html" class="navbar-link">Kapcsolat</a></li>
+                </ul>
+                <a href="#contact" class="navbar-cta">Gyorsüzenet</a>
+            </nav>
+
+        </div>
+    </header>
+    <header class="navbar-search-container">
+        <form class="navbar-search" role="search">
+            <input type="text" id="searchInput" placeholder="Termékek és szolgáltatások keresése...">
+            <button type="submit" id="searchBtn" aria-label="Keresés">
+                <img src="../Images/magnify.png" alt="Search">
+            </button>
+        </form>
+    </header>
+
+    <main>
+        <section id="deals" class="deals-section">
+            <h1 class="deals-title">KIEMELT AJÁNLATOK</h1>
+            
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <article class="deal-card">
+                        <div class="deal-image">
+                            <img src="../Images/switcholed_white.jpg" alt="Deal-1">
+                            <!--span class="deal-badge">-30%</span-->
+                        </div>
+                        <div class="deal-info">
+                            <h3>Nintendo Switch OLED 512GB - CFW</h3>
+                            <p class="deal-price">
+                                <!--span class="deal-badge">-30%</span-->
+                                <data value="139990" class="sale-price">139.990 Ft</data>
+                            </p>
+                            <button class="deal-cta">Érdekel!</button>
+                        </div>
+                    </article>
+
+                    <article class="deal-card">
+                        <div class="deal-image">
+                            <img src="../Images/ps4pro_black.jpg" alt="Deal-2">
+                            <!--span class="deal-badge">-30%</span-->
+                        </div>
+                        <div class="deal-info">
+                            <h3>PlayStation 4 Pro 1TB - GoldHEN</h3>
+                            <p class="deal-price">
+                                <!--span class="deal-badge">-30%</span-->
+                                <data value="89990" class="sale-price">89.990 Ft</data>
+                            </p>
+                            <button class="deal-cta">Érdekel!</button>
+                        </div>
+                    </article>
+
+                    <article class="deal-card">
+                        <div class="deal-image">
+                            <img src="../Images/mod_placeholder.jpg" alt="Deal-3">
+                            <!--span class="deal-badge">-30%</span-->
+                        </div>
+                        <div class="deal-info">
+                            <h3>Nintendo Switch Okosítás</h3>
+                            <p class="deal-price">
+                                <!--span class="deal-badge">-30%</span-->
+                                <span class="sale-price">7.990 - 19.990 Ft</span>
+                            </p>
+                            <button class="deal-cta">Érdekel!</button>
+                        </div>
+                    </article>
+
+                    <article class="deal-card">
+                        <div class="deal-image">
+                            <img src="../Images/ps5_optical.jpg" alt="Deal-4">
+                            <!--span class="deal-badge">-30%</span-->
+                        </div>
+                        <div class="deal-info">
+                            <h3>Sony PlayStation 5 1TB - Fehér, Digitális</h3>
+                            <p class="deal-price">
+                                <!--span class="deal-badge">-30%</span-->
+                                <data value="159990" class="sale-price">159.990 Ft</data>
+                            </p>
+                            <button class="deal-cta">Érdekel!</button>
+                        </div>
+                    </article>
+
+                    <article class="deal-card">
+                        <div class="deal-image">
+                            <img src="../Images/xbox_series_x.jpg" alt="Deal-5">
+                            <!--span class="deal-badge">-35%</span-->
+                        </div>
+                        <div class="deal-info">
+                            <h3>Xbox Series X 1TB</h3>
+                            <p class="deal-price">
+                                <!--span class="original-price">$29.99</span-->
+                                <data value="159990" class="sale-price">159.990 Ft</data>
+                            </p>
+                            <button class="deal-cta">Érdekel!</button>
+                        </div>
+                    </article>
+                </div>
+                <button class="carousel-nav prev" id="prevBtn" aria-label="Previous deal">❮</button>
+                <button class="carousel-nav next" id="nextBtn" aria-label="Next deal">❯</button>
+            </div>    
+            <div class="carousel-indicators" id="indicators"></div>
+            <div class="hero">
+                <a href="../Webshop/webshop.html" id="goto-shop" class="cta-button">Fedezze fel a teljes kínálatunkat!</a>
+            </div>
+        </section>
+
+        <section class="category-container">
+            <div>
+                <h2 class="deals-title">GYORSMENÜ</h2>
+            </div>
+            <div class="categories">
+                <button id="cat-1" class="catBtn">
+                    <img class="cat-img" src="../Images/cat_consoles.png" alt="Konzolok">
+                </button>
+                <button id="cat-2" class="catBtn">
+                    <img class="cat-img" src="../Images/cat_buy.png" alt="Felvásárlás">
+                </button>
+                <button id="cat-3" class="catBtn">
+                    <img class="cat-img" src="../Images/cat_services.png" alt="Sezrviz">
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="contacts">
+            <p id="title">Elérhetőségek (24/7)</p>
+            <p>Telefon: +36 30 783 8219</p>
+            <p>E-mail: yourboitomi@gmail.com</p>
+            <a href="../Contact/contact.html">Töltse ki a kapcsolatfeltvételi űrlapunkat!</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 yourboytomi - Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+    <script src="../js/mainscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="../Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/shopstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#home">yourboytomi</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="navbar-menu" id="navbarMenu">
+                <ul class="navbar-list">
+                    <li><a href="../Main/mainpage.html" class="navbar-link">Főoldal</a></li>
+                    <li><a href="../Webshop/webshop.html" class="navbar-link">Webshop</a></li>
+                    <li><a href="../Repairs/repairs.html" class="navbar-link">Konzol Szervíz</a></li>
+                    <li><a href="../Contact/contact.html" class="navbar-link">Kapcsolat</a></li>
+                </ul>
+                <a href="#contact" class="navbar-cta">Gyorsüzenet</a>
+            </nav>
+
+        </div>
+    </header>
+    <header class="navbar-search-container">
+        <div id="home" class="navbar-search">
+            <input type="text" id="searchInput" placeholder="Termékek és szolgáltatások keresése...">
+            <button type="button" id="searchBtn">
+                <img src="../Images/magnify.png" alt="Search">
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="category-container">
+            <div>
+                <h2 id="top-title" class="deals-title">XBOX <br> KONZOLOK ÉS TARTOZÉKOK</h2>
+            </div>
+
+            <div class="categories">
+                <button class="catBtn">
+                    <img class="cat-img" src="../Images/Xbox_series_shop.jpg" alt="">
+                </button>
+                <button class="catBtn">
+                    <img class="cat-img" src="../Images/Xbox_one_shop.jpg" alt="">
+                </button>
+                <button class="catBtn">
+                    <img class="cat-img" src="../Images/Xbox_360_shop.jpg" alt="">
+                </button>
+            </div>
+
+            <div>
+                <h2 class="deals-title">NINTENDO <br> KONZOLOK ÉS TARTOZÉKOK</h2>
+            </div>
+
+            <div class="categories">
+                <button class="catBtn">
+                    <img class="cat-img" src="../Images/Switch2_shop.jpg" alt="">
+                </button>
+                <button class="catBtn">
+                    <img class="cat-img" src="../Images/Switch_shop.jpg" alt="">
+                </button>
+                <button class="catBtn">
+                    <img class="cat-img" src="../Images/WiiU_shop.jpg" alt="">
+                </button>
+                <button class="catBtn">
+                    <img class="cat-img" src="../Images/Wii_shop.jpg" alt="">
+                </button>
+                <button class="catBtn">
+                    <img class="cat-img" src="../Images/3DS_shop.jpg" alt="">
+                </button>
+            </div>
+
+            <div>
+                <h2 class="deals-title">PLAYSTATION <br> KONZOLOK ÉS TARTOZÉKOK</h2>
+            </div>
+
+            <div class="categories">
+                <button class="catBtn">
+                    <img class="cat-img" src="../Images/PS5_Shop.jpg" alt="">
+                </button>
+                <button class="catBtn">
+                    <img class="cat-img" src="../Images/PS4_Shop.jpg" alt="">
+                </button>
+                <button class="catBtn">
+                    <img class="cat-img" src="../Images/PS3_Shop.jpg" alt="">
+                </button>
+            </div>
+
+            <section class="hero_2">
+                <h2>KONZOL FELVÁSÁRLÁS</h2>
+                <p>Esetleg eladná, vagy csak szimplán megunta a konzolját?</p>
+                <p id="p-cta">Ne használja porfogónak, mi szívesen megvesszük!</p>
+                <a href="#" class="cta-button">További információk</a>
+            </section>
+        </section>
+    </main> 
+
+    <footer class="main-footer">
+        <div class="contacts">
+            <p id="title">Elérhetőségek (24/7)</p>
+            <p>Telefon: +36 30 783 8219</p>
+            <p>E-mail: yourboitomi@gmail.com</p>
+            <a href="../Contact/contact.html">Töltse ki a kapcsolatfeltvételi űrlapunkat!</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 yourboytomi - Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+    <script src="../js/shopscript.js"></script>
+</body>
+</html>
