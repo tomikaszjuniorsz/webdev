@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="/BaseProject/Main/Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="contstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#home">yourboytomi</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="navbar-menu" id="navbarMenu">
+                <ul class="navbar-list">
+                    <li><a href="../Main/mainpage.html" class="navbar-link">Főoldal</a></li>
+                    <li><a href="../Webshop/Webshop_front/webshop.html" class="navbar-link">Webshop</a></li>
+                    <li><a href="../Repairs/repairs.html" class="navbar-link">Konzol Szervíz</a></li>
+                    <li><a href="../Contact/contact.html" class="navbar-link">Kapcsolat</a></li>
+                </ul>
+                <a href="#contact" class="navbar-cta">Gyorsüzenet</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="hero">
+                <h1>KAPCSOLATFELVÉTELI <br> ŰRLAP</h1>
+            </div>
+        </section>
+
+        <section class="form-container">
+            <form id="message" action="" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="lname">Vezetéknév</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Pl.: Erős" required>
+                    <div id="error-lname" class="error-msg"></div>
+                </div>    
+                
+                <div class="form-group">
+                    <label for="fname">Keresztnév</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Pl.: Pista" required>
+                    <div id="error-fname" class="error-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email cím</label>
+                    <input type="email" id="email" name="email" placeholder="Pl.: eros.pista@email.com" required>
+                    <div id="error-email" class="error-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefonszám (nem kötelező)</label>
+                    <input type="number" id="phone" name="phone" placeholder="Formátum: 06301235678" required>
+                    <div id="error-phone" class="error-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="ordnumber">Rendelés száma (Rendeléssel kapcsolatos ügyek esetén kötelező)</label>
+                    <input type="number" id="ordnumber" name="ordernumber" placeholder="pl. 123456789" required>
+                    <div id="error-ordnumber" class="error-msg"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">Tárgy</label>
+                    <div class="select-wrapper">
+                        <select id="topic" required>
+                            <option value="" disabled selected>-- Válasszon témát --</option>
+                            <option value="order-prob">Rendeléssel kapcsolatos probléma</option>
+                            <option value="service-prob">Szervizeléssel kapcsolatos probléma</option>
+                            <option value="complaints">Reklamáció</option>
+                            <option value="official">Hivatalos</option>
+                            <option value="other">Egyéb</option>
+                        </select>
+                        <div id="error-top" class="error-msg"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="desc">Kérjük, fejtse ki az üzenetét (max. 1500 karakter)</label>
+                    <textarea name="description" id="desc" rows="15" required></textarea>
+                    <div id="error-desc" class="error-msg"></div>
+                </div>
+
+                <button class="submit-button" type="submit">Elküldés</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="contacts">
+            <p id="title">Elérhetőségek (24/7)</p>
+            <p>Telefon: +36 30 783 8219</p>
+            <p>E-mail: yourboitomi@gmail.com</p>
+            <a href="#">Töltsd ki a kapcsolatfeltvételi űrlapunkat!</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 yourboytomi - Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+    <script src="contscript.js"></script>
+</body>
+</html>
