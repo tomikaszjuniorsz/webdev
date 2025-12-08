@@ -4,7 +4,10 @@ Ez a projekt a konzolos "cégem" főoldalaként és webshopjaként szolgál. Eme
 
 URL: https://github.com/tomikaszjuniorsz/webdev/
 
+
+
 A JS kódról:
+
 4 különböző .js fájl szerepel a projektben:
 
 PatakiTamás\BaseProject\Contact\contscript.js
