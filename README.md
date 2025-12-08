@@ -10,7 +10,7 @@ A JS kódról:
 
 4 különböző .js fájl szerepel a projektben:
 
-PatakiTamás\BaseProject\Contact\contscript.js
+1. PatakiTamás\BaseProject\Contact\contscript.js
 	- Ez a hamburger menü, és az űrlap validálás kódját tartalmazza.
 
 2. PatakiTamás\BaseProject\Main\mainscript.js
